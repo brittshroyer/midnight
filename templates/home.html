@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+  <div class="play-container">
+    <div class="dice-container">
+      <div class="dice dice-one {{ value }}">
+        {{ value }}
+      </div>
+      <form method="POST" action="/string">
+        {{ form }}
+        <!-- {{ form.creature.label }}
+        {{ form.creature() }}
+        {{ form.submit() }} -->
+      </form>
+      <!-- <div class="checkbox">
+        <label><input type="checkbox" value="" name="checkbox-one">Hold</label>
+      </div> -->
+    </div>
+    <div class="dice-container">
+      <div class="dice dice-two"></div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Hold</label>
+      </div>
+    </div>
+    <div class="dice-container">
+      <div class="dice dice-three"></div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Hold</label>
+      </div>
+    </div>
+    <div class="dice-container">
+      <div class="dice dice-four"></div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Hold</label>
+      </div>
+    </div>
+    <div class="dice-container">
+      <div class="dice dice-five"></div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Hold</label>
+      </div>
+    </div>
+    <div class="dice-container">
+      <div class="dice dice-six"></div>
+      <div class="checkbox">
+        <label><input type="checkbox" value="">Hold</label>
+      </div>
+    </div>
+  </div>
+  <form action="/roll/" method="post">
+    <button class="btn btn-success" name="rollBtn" type="submit">Roll</button>
+  </form>
+  <p>{{ value }} </p>
+{% endblock %}

@@ -1,0 +1,27 @@
+.dice {
+  height: 150px;
+  width: 150px;
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  /* background: purple; */
+  /* background-image: : url('../../qm.svg'); */
+}
+
+.play-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.dice-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
